@@ -20,8 +20,6 @@ public:
 
         }
 
-       
-
         for(char c: st1){
             if(!st2.empty()  &&  st2.top()==second && c== first){
                 ans= ans+ minV;
