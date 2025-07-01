@@ -39,8 +39,8 @@ class Solution {
         }
         
         
-        int startRow = row / 3 * 3;
-        int startCol = col / 3 * 3;
+        int startRow = row - (row%3);
+        int startCol = col - (col%3);
         for (int i = startRow; i < startRow + 3; i++) {
             for (int j = startCol; j < startCol + 3; j++) {
                 if (board[i][j] == num) {
